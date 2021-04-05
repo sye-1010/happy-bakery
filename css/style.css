@@ -32,7 +32,7 @@ input {
 }
 
 .fill-button {
-  background-color: rgb(206, 177, 17);
+  background-color: rgb(255, 217, 0);
   font-weight: 700;
   padding: 10px 20px;
   border-radius: 20px;
@@ -41,8 +41,8 @@ input {
 }
 
 .fill-button:hover {
-  background-color: rgb(219, 219, 219);
-  color: rgb(206, 177, 17);
+  background-color: #fff;
+  color: rgb(255, 217, 0);
 }
 
 .cont-title {
@@ -229,19 +229,51 @@ input {
   justify-content: center;
 }
 
-.product-list button {
+.product-buttons {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.product-buttons button {
   /* border: 1px solid rgb(200, 200, 200); */
   margin-right: 20px;
   padding: 3px 10px;
   border-radius: 4px;
 }
 
-.product-list button:hover {
+.product-buttons button:hover {
   background-color: rgb(200, 200, 200);
   color: #fff;
 }
 
-.product-list button:not(:first-child) {
+.prod-items-wrap {
+  padding: 68px 0;
+}
+
+.prod-items {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.prod-items .item {
+  margin: 0 auto;
+}
+
+.prod-items .item img {
+  width: 100%;
+  margin: 0 auto 10px;
+}
+
+.prod-name {
+  padding-left: 10px;
+  text-align: left;
+  font-weight: 700;
+}
+
+.prod-price {
+  display: block;
+  color: #999;
 }
 
 #backtotop {

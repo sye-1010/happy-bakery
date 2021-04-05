@@ -1,0 +1,13 @@
+{
+  "prod-items" : [
+    {
+      "name" : "바삭하고 부드러운 바게트 빵",
+      "price" : "3,000",
+      "prod-alt" : "바게트 빵",
+      "image" : "../img/bread/bread-bag.jpg"
+    },
+    {
+
+    }
+  ]
+}
