@@ -9,7 +9,8 @@ body {
   word-break: keep-all;
 }
 
-a {
+a,
+a:hover {
   text-decoration: none;
   color: inherit;
   display: inline-block;
@@ -32,7 +33,7 @@ input {
 }
 
 .fill-button {
-  background-color: rgb(255, 217, 0);
+  background-color: rgb(218, 188, 19);
   font-weight: 700;
   padding: 10px 20px;
   border-radius: 20px;
@@ -42,7 +43,21 @@ input {
 
 .fill-button:hover {
   background-color: #fff;
-  color: rgb(255, 217, 0);
+  color: rgb(218, 188, 19);
+}
+
+.btn--black {
+  border: 2px solid rgb(58, 58, 58);
+  font-weight: 600;
+  color: rgb(47, 48, 49);
+  width: 130px;
+  height: 40px;
+  transition: all 0.4s;
+}
+
+.btn--black:hover {
+  background-color: rgb(47, 48, 49);
+  color: #fff;
 }
 
 .cont-title {
@@ -220,7 +235,8 @@ input {
 }
 
 .product-desc {
-  font-weight: 300;
+  font-weight: 400;
+  margin: 0 auto 48px;
 }
 
 .product-list {
@@ -240,34 +256,40 @@ input {
   margin-right: 20px;
   padding: 3px 10px;
   border-radius: 4px;
+  transition: all 0.3s;
 }
 
 .product-buttons button:hover {
-  background-color: rgb(200, 200, 200);
+  background-color: rgb(47, 48, 49);
   color: #fff;
 }
 
-.prod-items-wrap {
+.prod-items {
   padding: 68px 0;
 }
 
-.prod-items {
+.prod-item-box {
   width: 90%;
-  margin: 0 auto;
+  margin: 0 auto 40px;
 }
 
-.prod-items .item {
-  margin: 0 auto;
+.item-img {
+  margin-bottom: 24px;
+  object-fit: cover;
+  height: 400px;
 }
 
-.prod-items .item img {
-  width: 100%;
-  margin: 0 auto 10px;
+.item-img img {
+  margin: 0 auto 24px;
+  width: 280px;
+  height: 400px;
+
+  display: block;
 }
 
 .prod-name {
   padding-left: 10px;
-  text-align: left;
+  text-align: center;
   font-weight: 700;
 }
 
@@ -346,5 +368,17 @@ input {
 
   .hero-content {
     padding-top: 80px;
+  }
+
+  /* Product */
+  .prod-items .col-md-4 {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* Product */
+  .prod-items .col-md-4 {
+    width: 33.33333%;
   }
 }

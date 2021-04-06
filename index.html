@@ -21,6 +21,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400&display=swap" rel="stylesheet">
   <!-- STYLE -->
   <link rel="stylesheet" href="./css/style.css">
+  <!-- JAVASCRIPT -->
+  <script src="./js/main.js" defer></script>
+
 </head>
 <body>
 
@@ -76,7 +79,7 @@
     <section class="service">
       <div class="container">
         <div class="row">
-          <div class="col-12">
+          <div class="col-12 col-md-3">
             <h2 class="service-tit">Our Service</h2>
           </div>
         </div>
@@ -202,34 +205,129 @@
      
     <section class="product">
       <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h2 class="product-tit">해피베이커리 제품</h2>
-            <p class="product-desc">
-              최고의 제품을 확인하고 해피베이커리의 열정을 느껴보세요
-            </p>
-            <div class="product-buttons">
-              <button>모두보기</button>
-              <button>빵</button>
-              <button>케이크</button>
-              <button>도넛츠</button>
-              <button>제과</button>
+          <div class="row">
+            <div class="col-12">
+              <h2 class="product-tit">해피베이커리 제품</h2>
+              <p class="product-desc">
+                최고의 제품을 확인하고 해피베이커리의 열정을 느껴보세요
+              </p>
+              <div class="product-buttons">
+                <button>모두보기</button>
+                <button>빵</button>
+                <button>케이크</button>
+                <button>도넛츠</button>
+                <button>쿠키</button>
+              </div>
+            </div>
+          </div>
+          <div class="row prod-items">
+            <!-- contents -->
+            <div class="col-12 col-md-4">
+              <div class="prod-item-box">
+                <a href="#">
+                  <div class="item-img">
+                    <img src="./img/bread/bread-bag.jpg" alt="바게트">
+                  </div>
+                  <p class="prod-name">바게트<span class="prod-price">4,000원</span>
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="prod-item-box">
+                <a href="#">
+                  <div class="item-img">
+                    <img src="./img/cake/cake-blueberry.jpg" alt="블루베리 케이크">
+                  </div>
+                  <p class="prod-name">블루베리 케이크<span class="prod-price">50,000원</span>
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="prod-item-box">
+                <a href="#">
+                  <div class="item-img">
+                    <img src="./img/donuts/donuts-choco.jpg" alt="초코도너츠">
+                  </div>
+                  <p class="prod-name">초코도너츠(3개입)<span class="prod-price">6,000원</span>
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="prod-item-box">
+                <a href="#">
+                  <div class="item-img">
+                    <img src="./img/cookie/cookie-choco.jpg" alt="초코쿠키">
+                  </div>
+                  <p class="prod-name">초코쿠키(4개입)<span class="prod-price">4,000원</span>
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="prod-item-box">
+                <a href="#">
+                  <div class="item-img">
+                    <img src="./img/bread/bread-cro.jpg" alt="크로아상">
+                  </div>
+                  <p class="prod-name">크로아상(6개입)<span class="prod-price">5,000원</span>
+                  </p>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="prod-item-box">
+                <a href="#">
+                  <div class="item-img">
+                    <img src="./img/cake/cake-choco.jpg" alt="크로아상">
+                  </div>
+                  <p class="prod-name">초코케이크<span class="prod-price">45,000원</span>
+                  </p>
+                </a>
+              </div>
+            </div>
+            <!-- <div class="col-12 col-md-4">
+              <div class="prod-item-box">
+                <div class="item-img">
+                  <img src="./img/donuts/donuts-original.jpg" alt="오리지널 도너츠">
+                </div>
+                <p class="prod-name">오리지널 도너츠(5개입)<span class="prod-price">5,000원</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="prod-item-box">
+                <div class="item-img">
+                  <img src="./img/cookie/cookie-original.jpg" alt="오리지널 쿠키 6개입">
+                </div>
+                <p class="prod-name">오리지널 쿠키(6개입)<span class="prod-price">6,400원</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="prod-item-box">
+                <div class="item-img">
+                  <img src="./img/donuts/donuts-set.jpg" alt="도너츠 세트">
+                </div>
+                <p class="prod-name">도너츠 세트<span class="prod-price">6,000원</span>
+                </p>
+              </div>
+            </div>  -->
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <button type="button " class="btn--black">더보기</button>
             </div>
           </div>
         </div>
-        <div class="row prod-items-wrap">
-          <div class="col-12">
-            <ul class="prod-items">
-              <li class="item">
-                <img src="./img/bread/bread-bag.jpg" alt="바게트">
-                <p class="prod-name">바삭하고 부드러운 바게트
-                  <span class="prod-price">3,000원</span>
-                </p>
-              </li>
-            </ul>
-          </div>
-        </div>
       </div>
+    </section>
+
+
+    <section class="map">
+      <div id="map" style="width:500px;height:400px;"></div>
     </section>
 
     <footer>
@@ -237,8 +335,7 @@
     <a id="backtotop" ></a>
   </div>
   <!-- //body container -->
-
-
+ 
 </body>
 </html>
 
