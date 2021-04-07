@@ -359,13 +359,13 @@ footer {
 }
 
 #backtotop {
-  background-color: rgb(47, 48, 49);
+  background-color: rgb(145, 145, 145);
   width: 40px;
   height: 40px;
   border-radius: 50%;
   text-align: center;
   position: fixed;
-  bottom: 30px;
+  bottom: 40px;
   right: 30px;
   transition: all 0.5s;
   opacity: 0;
@@ -373,18 +373,24 @@ footer {
   z-index: 999;
 }
 
+/* 아이콘 적용 */
 #backtotop::after {
-  content: "\f077";
+  content: "\f106";
   font-size: 1.5rem;
   line-height: 40px;
   color: #fff;
   font-family: "FontAwesome";
 }
 
+#backtotop.show:hover {
+  cursor: pointer;
+  background-color: #666;
+}
+
 #backtotop.show {
   opacity: 1;
   visibility: visible;
-  background-color: rgb(47, 48, 49);
+  background-color: rgb(145, 145, 145);
 }
 
 @media screen and (min-width: 768px) {
