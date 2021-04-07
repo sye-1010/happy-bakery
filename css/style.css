@@ -81,7 +81,6 @@ input {
 .hero {
   text-align: center;
   color: #eee;
-  font-family: "Nanum Myeongjo", serif;
 }
 
 .hero .container {
@@ -151,11 +150,15 @@ input {
   height: 450px;
 }
 
+.service-tit-wrap {
+  margin: 0 auto 62px;
+}
+
 .service-tit {
   font-size: 32px;
   font-weight: 700;
   color: #333;
-  margin-bottom: 62px;
+  width: auto;
 }
 
 .service-cont-tit {
@@ -298,6 +301,63 @@ input {
   color: #999;
 }
 
+/* Footer */
+footer {
+  font-weight: 300;
+  color: #aaa;
+  background-color: rgb(49, 49, 49);
+}
+
+.ft-contents {
+  padding: 68px 0;
+}
+
+.open-hour {
+  margin-bottom: 40px;
+}
+
+.footer-tit {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.footer-tit::after {
+  display: block;
+  content: "";
+  width: 150px;
+  height: 2px;
+  background-color: rgb(107, 107, 107);
+}
+
+.working-days {
+  margin-bottom: 20px;
+}
+
+.w-day {
+  display: inline-block;
+  width: 40%;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.w-hour {
+  display: inline-block;
+  width: 30%;
+}
+
+.contatc {
+  line-height: 28px;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 12px;
+  line-height: 34px;
+  height: 34px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 #backtotop {
   background-color: rgb(47, 48, 49);
   width: 40px;
@@ -373,6 +433,12 @@ input {
   /* Product */
   .prod-items .col-md-4 {
     width: 50%;
+  }
+
+  /* Footer */
+
+  .open-hour {
+    margin-bottom: 0;
   }
 }
 
